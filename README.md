@@ -1,1 +1,3 @@
 # DreyFit
+
+npm start
