@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 import logo from '../images/icon.jpg';
 
 function Footer() {
+
+  const urlInstagram = 'https://www.instagram.com/dreyfit_10?igsh=bXppY2hocnFtYTRi';
+  const urlFacebook= 'https://www.facebook.com/diegoreyduque?mibextid=kFxxJD';
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -43,8 +47,8 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Redes Sociales</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Youtube</Link>
+            <Link to={urlInstagram}>Instagram</Link>
+            <Link to={urlFacebook}>Facebook</Link>
           </div>
         </div>
       </div>
@@ -60,19 +64,19 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to = {urlInstagram}
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
             <Link
-              class='social-icon-link youtube'
-              to='/'
+              class='social-icon-link facebook'
+              to={urlFacebook}
               target='_blank'
-              aria-label='Youtube'
+              aria-label='Facebook'
             >
-              <i class='fab fa-youtube' />
+              <i class='fab fa-facebook' />
             </Link>
           </div>
         </div>

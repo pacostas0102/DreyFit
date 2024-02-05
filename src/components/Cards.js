@@ -1,6 +1,7 @@
 import React from 'react'
 import  CardItem from './CardItem'
 import './Cards.css'
+import service1 from '../images/Service1.jpg';
 
 export default function Cards() {
   return (
@@ -67,9 +68,9 @@ export default function Cards() {
         <div className='cards__wrapper'>
             <ul className='cards__items'>
                <CardItem 
-                src = "images/img-9.jpg"
-                text = "Asesoría completa con Plan de Entrenamiento Personalizado"
-                label= 'Constancia'
+                img src={service1} alt="Service1" style={{ width: '30px', height: '30px'}}
+                label= 'Diseño de Objetivo'
+                text = "Plan de Entrenamiento Personalizado- Asesoría completa"
                 path= '/services'
                 />
                 <CardItem 

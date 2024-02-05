@@ -60,7 +60,7 @@ function Navbar() {
                 Contacto
               </Link>
             </li>
-
+            {/*
             <li>
               <Link
                 to='/signup'
@@ -70,8 +70,9 @@ function Navbar() {
                 Inicia Sesion
               </Link>
             </li>
+            */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Inicia Sesion</Button>}
+          {/*{button && <Button buttonStyle='btn--outline'>Inicia Sesion</Button>}*/}
         </div>
       </nav>
     </>
