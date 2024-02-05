@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import logo from '../images/icon.jpg';
 
 function Footer() {
   return (
@@ -51,11 +52,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
+              <img src={logo} alt="Logo" style={{ width: '30px', height: '30px', paddingRight: '5px' }} /> 
               DREYFIT
-              <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>DREYFIT © 2024</small>
+          <small class='website-rights'>IntelligenceGroup © 2024. Derechos Reservados</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link instagram'
@@ -75,8 +76,6 @@ function Footer() {
             </Link>
           </div>
         </div>
-      </section><section  style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-  <     small className='website-rights'>Desarrollado por Paula Acosta</small>
       </section>
     </div>
   );
